@@ -14,7 +14,7 @@ int main () {
 	while(counter!=100000){
 		random_shuffle(deck,deck+416);
 		counter++;
-		ott<<counter<<" ";
+		
 		for(int i=0;i<416;i++){
 			ott<<deck[i]<<" ";
 		}
