@@ -3,11 +3,15 @@ import numpy as np
 import queue as que
 import random
 from datetime import datetime
+import time
+start_time = time.time()
 #random.seed(datetime.now())
 from matplotlib import pyplot as plt
 each_bet_array = [100, 200, 300, 400, 500]
 each_bet=400
 f = open('A.txt', 'w', encoding = 'UTF-8')
+datafile = open('data.txt', 'w', encoding = 'UTF-8')
+
 def return_mark(strr):
     strlength=len(strr)
     rstr=strr[1:]
@@ -39,7 +43,7 @@ def return_mark(strr):
         return 0
 aggregate_mean_max=[]
 aggregate_mean_max_occur=[]
-itr_r=1
+itr_r=1000
 
 #bord banker=1, dealer=0
 for num in range(len(each_bet_array)):
@@ -49,10 +53,10 @@ for num in range(len(each_bet_array)):
         dealer=0
         banker=0
         draw=0        
-        fr=open('1000deck.txt')
+        fr=open('10000deck__.txt')
         numberofline=len(fr.readlines())
         #print(numberofline,'set card')
-        fr=open('1000deck.txt')
+        fr=open('10000deck__.txt')
         profit=[]
         round_max_array=[]
         round_max_occur_array=[]
@@ -187,6 +191,7 @@ for num in range(len(each_bet_array)):
                 if initialize_money>round_max:
                     round_max=initialize_money
                     round_max_occur=cur
+                datafile.write(str(cur)+' '+str(initialize_money)+' '+str(each_bet)+'\n')
             round_max_array.append(round_max)
             round_max_occur_array.append(round_max_occur)
             profit.append(initialize_money)
@@ -226,5 +231,8 @@ for num in range(len(each_bet_array)):
     f.write('total :'+str(total)+'\n')
     f.write('max_mean :'+str(out_max_mean)+'\n')
     f.write('max_occur :'+str(out_max_mean_round)+'\n')
-    
+timetime=(time.time() - start_time)
+print("--- %s seconds ---" % (time.time() - start_time))
+f.write("--- run seconds ---"+str(timetime)+'\n') 
 f.close()
+datafile.close()
