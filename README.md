@@ -28,15 +28,27 @@
 再將每局持有嘅現金量同埋對應局數用scatter同heatmap plot出黎
 
 1000 副
-![alt tag](https://holland.pk/4k0fte9j)
+
+
+
+![alt tag](https://holland.pk/un0dbke7)
+
+
+
+
 
 10000副
 ![alt tag](https://holland.pk/62be1wnu)
 
 
+
+
+
 就會發現其實平均最大收益咁細嘅原因就係大部份都會係頭1x round之內輸清光 拉低左個mean
 
 將所持少過1000嘅人移除
+
+
 
 
 
