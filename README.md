@@ -16,6 +16,10 @@
 
 #Result
 
+
+[img]https://holland.pk/qlivtda4[/img]
+
+
 從數據結果我地知道係隨機投注,不斷嘅上升嘅iteration數目或者輸入副數,
 只係會令平均最大收益converge去某一個細嘅range 所以我地就用左1000副做模擬dataset
 
