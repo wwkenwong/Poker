@@ -17,7 +17,7 @@
 #Result
 
 
-[img]https://holland.pk/qlivtda4[/img]
+![alt tag](https://holland.pk/qlivtda4)
 
 
 從數據結果我地知道係隨機投注,不斷嘅上升嘅iteration數目或者輸入副數,
