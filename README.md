@@ -2,8 +2,14 @@
 #Background
 
 話説前一排去左上線啦玩左幾round百家樂,而近排又玩緊ml,所以就整左個python simulator黎模擬投注情況
+
+
 我地首先假設本金1000, 每注面值相同並以p為代表,p={100,200,300,400,500}直至無牌或無足夠現金 
+
+
 使用random generator作為對買燈嘅模擬 並盡量減少抽中和局嘅機會
+
+
 首先用generator.cpp generate想要嘅牌數,simulation__with_output _winningsequence.py 做模擬,再輸出dataset,
 並用 plot_modified_without_space.py plot scatter,heatmap
 
